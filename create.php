@@ -44,7 +44,7 @@ include('config.php')
         if(isset($_POST['submit'])){
             $namaapps   = $_POST['namaapps'];
             $alamat     = $_POST['alamat'];
-            $unitkerja = $_POST['unitkerja'];
+            $unitkerja  = $_POST['unitkerja'];
             $departemen = $_POST['departemen'];
 
             $cek = mysqli_query($koneksi, "SELECT * FROM apps WHERE namaapps='$namaapps'") or die(mysqli_error($koneksi));
